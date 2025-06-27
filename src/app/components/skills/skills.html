@@ -1,0 +1,90 @@
+<section class="skills">
+  <div class="skills-container">
+    <div class="skills-header">
+      <h1>My Skills</h1>
+      <p>Here are the technologies and tools I work with</p>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skill-category">
+        <h2><i class="fas fa-code"></i> Programming Languages</h2>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let lang of languages">
+            <div class="skill-info">
+              <i [class]="lang.icon"></i>
+              <span class="skill-name">{{ lang.name }}</span>
+              <span class="skill-percentage">{{ lang.level }}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [style.width.%]="lang.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technologies & Frameworks -->
+      <div class="skill-category">
+        <h2><i class="fas fa-cogs"></i> Technologies & Frameworks</h2>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let tech of technologies">
+            <div class="skill-info">
+              <i [class]="tech.icon"></i>
+              <span class="skill-name">{{ tech.name }}</span>
+              <span class="skill-percentage">{{ tech.level }}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [style.width.%]="tech.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-category">
+        <h2><i class="fas fa-database"></i> Databases</h2>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let db of databases">
+            <div class="skill-info">
+              <i [class]="db.icon"></i>
+              <span class="skill-name">{{ db.name }}</span>
+              <span class="skill-percentage">{{ db.level }}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [style.width.%]="db.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-category">
+        <h2><i class="fas fa-tools"></i> Tools & Software</h2>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let tool of tools">
+            <div class="skill-info">
+              <i [class]="tool.icon"></i>
+              <span class="skill-name">{{ tool.name }}</span>
+              <span class="skill-percentage">{{ tool.level }}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [style.width.%]="tool.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="soft-skills-section">
+      <h2><i class="fas fa-users"></i> Soft Skills</h2>
+      <div class="soft-skills-grid">
+        <div class="soft-skill-card" *ngFor="let skill of softSkills">
+          <i class="fas fa-check-circle"></i>
+          <span>{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,64 @@
+<section class="about">
+  <div class="about-container">
+    <div class="about-header">
+      <h1>About Me</h1>
+      <div class="header-line"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <div class="text-card">
+          <h2>Who Am I?</h2>
+          <p>
+            I'm Divya Yekula, a dedicated Computer Science and Engineering (IoT) student with strong foundations in 
+            Java, Python, and web development technologies. I'm passionate about creating innovative solutions 
+            through technology and have hands-on experience in various projects ranging from healthcare applications 
+            to smart feeding systems.
+          </p>
+          <p>
+            I have demonstrated expertise in Data Structures, DBMS, and Machine Learning, with a proven ability to 
+            quickly learn and adapt to new technologies. I'm seeking opportunities to apply my technical skills and 
+            problem-solving capabilities in a progressive and growth-focused organization.
+          </p>
+        </div>
+      </div>
+      
+      <div class="about-image">
+        <div class="image-wrapper">
+          <div class="profile-img">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="floating-elements">
+            <div class="element element-1"></div>
+            <div class="element element-2"></div>
+            <div class="element element-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="education-section">
+      <h2>Education</h2>
+      <div class="education-timeline">
+        <div class="timeline-item" *ngFor="let edu of education; let i = index">
+        
+          <div class="timeline-content">
+            <h3>{{ edu.institution }}</h3>
+            <h4>{{ edu.degree }}</h4>
+            <p class="period">{{ edu.period }}</p>
+            <p class="cgpa">{{ edu.cgpa }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="certifications-section">
+      <h2>Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card" *ngFor="let cert of certifications">
+          <i class="fas fa-certificate"></i>
+          <p>{{ cert }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
