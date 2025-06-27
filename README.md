@@ -1,3 +1,5 @@
+![Screenshot 2025-06-27 120249](https://github.com/user-attachments/assets/30a98b3c-942e-40e1-abb3-2c88b7745e2c)
+
 # Porfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
